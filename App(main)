@@ -1,0 +1,36 @@
+package example;
+
+public class App {
+	public static void main(String[] args) {
+		
+		Corvette corv1 = new Corvette();
+		corv1.setId_Number(63453);
+		corv1.setShipname("UCS Mackenzie");
+		System.out.println(corv1.getId_Number());
+		
+		Frigate frig1 = new Frigate();
+		frig1.setId_Number(54234);
+		frig1.setShipname("UCS Lount");
+		System.out.println(frig1.getId_Number());
+		
+		corv1.setCourse();
+		frig1.allHandsToQuarters();
+		
+		// The Stuff method contains calls to the three abstract methods declared in the abstact class Ship and implemented in the child class Corvette, which is a type of Ship.
+		
+		corv1.Stuff();
+		
+		// Ship ship1 = new Ship();
+		// Won't work. Ship has been declared an abstract class and cannot be instantiated.
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
