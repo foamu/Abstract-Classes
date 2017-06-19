@@ -1,0 +1,20 @@
+package example;
+
+public class Corvette extends Ship {
+
+	@Override
+	public void setCourse() {
+		System.out.println("Corvette " + this.getShipname() + " has set course, Admiral.");
+	}
+
+	@Override
+	public void collectiveFire() {
+		System.out.println("Corvette " + this.getShipname() + " has been ordered to collective fire, Admiral.");
+	}
+
+	@Override
+	public void allHandsToQuarters() {
+		System.out.println("Corvette " + this.getShipname() + " has called all hands to general quarters, Admiral.");
+	}
+
+}
